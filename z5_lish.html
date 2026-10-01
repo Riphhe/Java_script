@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Lishka 2P</title>
+ <style>
+        *{
+            text-align: center;
+        } 
+        div{
+            margin-top:500px;
+        }
+ </style>
+</head>
+<body>
+<script>
+function grafika1()
+ {
+window.open("grafika1.html","okienko1","toolbar=no,directories=no,menubar=no,height=300,width=150,top=380,left=350");
+ }
+ function grafika2()
+ {
+window.open("grafika2.html","okienko2","toolbar=no,directories=no,menubar=no,height=300,width=150,top=380,left=580");
+ }
+ function grafika3()
+ {
+window.open("grafika3.html","okienko3","toolbar=no,directories=no,menubar=no,height=300,width=150,top=380,left=810");
+ }
+ function grafika4()
+ {
+window.open("grafika4.html","okienko4","toolbar=no,directories=no,menubar=no,height=300,width=150,top=380,left=980");
+ }
+ function okno_zamknij()
+ {
+ window.close()
+ }
+document.write("wykonał: Nazar Lishka klasa mój numer w dzienniku 9, czyli mam układ [(9) mod4=1] układ 1".fontcolor("purple").bold().fontsize(7));
+</script>
+<form>
+ <input type="button_g1" value="grafika1" onclick="grafika1(' ')">
+ <input type="button_g2" value="grafika2" onclick="grafika2(' ')">
+ <input type="button_g3" value="grafika3" onclick="grafika3(' ')">
+ <input type="button_g4" value="grafika4" onclick="grafika4(' ')">
+ <div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</div>
+ </form>
+</body>
+</html>

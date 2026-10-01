@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <head>
+ <title> z12_kod</title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<textarea cols="100" rows="35">
+<!DOCTYPE html>
+ <head>
+ <title> z12</title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+
+ var D1_lis=prompt("Data1>Data2 Data1=","");
+ var G1_lis=prompt("godzina1>godzina2 godzina1=",""); 
+ var D2_lis=prompt("Data1>Data2 Data2=","");
+ var G2_lis=prompt("godzina1>godzina2 godzina2=","");
+ var sekunde_lis;
+ var a = parseFloat(D1_lis);
+ var b = parseFloat(D2_lis);
+ var g1 = parseFloat(G1_lis);
+ var g2 = parseFloat(G2_lis);
+    sekunde_lis =(a-b)*24*60*60+(g1-g2)*60*60;
+    document.write("ilość sekund między dniami ".fontcolor("green").bold().fontsize(49)+ a +" i ".fontcolor("green").bold().fontsize(49)+b +" jest ".fontcolor("green").bold().fontsize(49) + sekunde_lis + "sekund".fontcolor("green").bold().fontsize(49) + "<br>");
+   function okno_zamknij()
+   {
+   window.close()
+   }
+
+
+ </script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
+</textarea>
+</body>
+</html>

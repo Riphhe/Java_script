@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 16 Nazar Lishka</title>
+</head>
+<body>
+<div style="color:red; font-size:50px;">
+<script language="JavaScript">
+ var liczba1_lis=prompt("Podaj pierwszą liczbę A=","");
+    var A_lis=parseFloat(liczba1_lis);
+ var liczba1_lis=prompt("Podaj drugą liczbę B=","");
+    var B_lis=parseFloat(liczba1_lis);
+
+ W_lis = (A_lis+B_lis)**3;
+ X3_lis = A_lis**3;
+ Y3_lis = B_lis**3;
+ X3Y_lis = 3*((A_lis)**2)*(B_lis);
+ XY3_lis = 3*(A_lis)*((B_lis)**2);
+
+ document.write("wczytane liczby:  A="+A_lis+" B="+B_lis+"<br>");
+ document.write("( "+A_lis+" + "+B_lis+")^3 =");
+ document.write(" "+A_lis+"^3 + 3*(("+A_lis+")^2)*("+B_lis+") + 3*("+A_lis+")*(("+B_lis+")^2) + "+B_lis+"^3 =");
+ document.write(" "+X3_lis+" + "+X3Y_lis+" + "+XY3_lis+" + "+Y3_lis+" = " +W_lis+ "<br>");
+</script>
+</div>
+</body>
+</html>
