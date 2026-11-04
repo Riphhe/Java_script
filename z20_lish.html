@@ -1,0 +1,49 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+ function AB()
+ {
+var xa= parseFloat(document.getElementById('xa').value);
+var ya= parseFloat(document.getElementById('ya').value);
+var xb= parseFloat(document.getElementById('xb').value);
+var yb= parseFloat(document.getElementById('yb').value);
+var d= Math.sqrt((xb-xa)**2+(yb+ya)**2);
+ document.getElementById("nazwa").innerHTML ="AB= "+d.toFixed(2);
+ }
+ function AC()
+ {
+var xa= parseFloat(document.getElementById('xa').value);
+var ya= parseFloat(document.getElementById('ya').value);
+var xc= parseFloat(document.getElementById('xc').value);
+var yc= parseFloat(document.getElementById('yc').value);
+var d= Math.sqrt((xc-xa)**2+(yc+ya)**2);
+ document.getElementById("nazwa").innerHTML ="AC= "+d.toFixed(2);
+ }
+ function BC()
+ {
+var xc= parseFloat(document.getElementById('xc').value);
+var yc= parseFloat(document.getElementById('yc').value);
+var xb= parseFloat(document.getElementById('xb').value);
+var yb= parseFloat(document.getElementById('yb').value);
+var d= Math.sqrt((xb-xc)**2+(yb+yc)**2);
+ document.getElementById("nazwa").innerHTML ="BC= "+d.toFixed(2);
+ }
+</script>
+ <h1>Wszystko o KWADRACIE</h1><br><br>
+ Podaj Ax: <input type="text" id="xa" value=""> <br><br><br>
+ Podaj Ay: <input type="text" id="ya" value=""> <br><br><br>
+ Podaj Bx: <input type="text" id="xb" value=""> <br><br><br>
+ Podaj By: <input type="text" id="yb" value=""> <br><br><br>
+ Podaj Cx: <input type="text" id="xc" value=""> <br><br><br>
+ Podaj Cy: <input type="text" id="yc" value=""> <br><br><br>
+ <div style="color:red;font-size:50px;"id="nazwa">
+ <input type="button" name="AB" value="AB" Onclick="AB()"><br><br>
+ <input type="button" name="BC" value="BC" Onclick="BC()"><br><br>
+ <input type="button" name="AC" value="AC" Onclick="AC()"><br><br>
+ </div>
+</body>
+</html>

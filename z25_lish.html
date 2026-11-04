@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 25 Nazar Lishka</title>
+    <script language="JavaScript">
+        var N0_lis = prompt("Podaj N0","");
+        var t_lis = prompt("Podaj czas","");
+        var half_life_lis = prompt("Podaj okres połowicznego zaniku","");
+        var lambda_lis = Math.LN2 /half_life_lis;
+        var N_lis = N0_lis * Math.pow(Math.E, -lambda_lis * t_lis);
+    </script>
+</head>
+<body>
+    <script language="JavaScript">
+        document.write("N0 = " + N0_lis + " [sztuk]<br>")
+        document.write("t = " + t_lis+ " [lat]<br>");
+        document.write("T1/2 = " + half_life_lis + " [lat]<br>");
+        document.write("Lambda = " + lambda_lis.toFixed(7) + " [1/rok]<br>");
+        document.write("N = " + N_lis.toFixed(7) + " [sztuk]<br>");
+    </script>
+</body>
+</html>

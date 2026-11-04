@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+</title>
+ 
+</head>
+<body style="background-color: darkgrey;">
+<div style="color:#0004ffd5;font-size:30px;">
+    <script language="JavaScript">
+var x1_lis=parseFloat(prompt("x1=",""));
+var x2_lis=parseFloat(prompt("x2=",""));
+function Y1_lis(x1){
+    var y1_lis = 3*x1**(5/7);
+    return y1_lis;
+}
+function Y2_lis(x1){
+    var x1_r_lis = (Math.PI*x1)/180;
+    var y2_lis = (2*Math.cos(x1_r_lis))+(3*Math.sin(x1_r_lis));
+    return y2_lis;
+}
+function Y3_lis(x1,x2){
+    var y3_lis= Math.pow(x1**5+2*x2**4,1/3)*Math.abs(x1-x2);
+    return y3_lis;
+}
+    document.write("x1 = "+x1_lis+" x2 = "+x2_lis+"<br>")
+    document.write("x1 = "+x1_lis+" x2 = "+((Math.PI*x1_lis)/180).toFixed(2)+"<br>")
+    document.write("y1 = "+Y1_lis(x1_lis).toFixed(2)+"<br>");
+    document.write("y2 = "+Y2_lis(x1_lis).toFixed(2)+"<br>");
+    document.write("y3 = "+Y3_lis(x1_lis,x2_lis).toFixed(2)+"<br>");
+ </script>
+
+ 
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+</title>
+ <script language="JavaScript">
+function Drabina(d,x)
+{
+ d_liczba=parseFloat(d)
+ x_liczba=parseFloat(x)
+ Drabina_wynik=Math.sqrt((d_liczba)**2+(x_liczba)**2);
+ document.getElementsByName('obj')[0].value=Drabina_wynik.toFixed(2); /* na dokument */
+ alert("długość drabiny="+Drabina_wynik.toFixed(2)+" m"); /*do okna Alert */
+ pokaz1.innerHTML="długość drabiny="+Drabina_wynik.toFixed(2)+" m"+"<br>"; /* do tabeli */
+}
+function Alfa(d,x)
+{
+ d_liczba=parseFloat(d)
+ x_liczba=parseFloat(x)
+ alfa=Math.atan(d_liczba/x_liczba)*180/Math.PI;
+ document.getElementsByName('pole')[0].value=alfa.toFixed(2);
+ alert("Pole="+alfa.toFixed(2)+" cm");
+ pokaz2.innerHTML="Pole="+alfa.toFixed(2)+"cm";
+}
+ </script>
+</head>
+<body>
+Pobliczanie Obwodu i Pola
+<br> <br>
+<form name="formularz" action="..." onsubmit="Drabina(this.promien.value,this.wysokosc.value);
+Alfa(this.promien.value,this.wysokosc.value);return false">
+ Podaj d=
+ <input size="6" name="promien">
+ Podaj x=
+ <input size="6" name="wysokosc">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ długość drabiny=
+ <input size="6" name="obj">
+ kąt nachylenia drabiny=
+ <input size="6" name="pole">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body>
+</html>

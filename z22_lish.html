@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+</title>
+ <script language="JavaScript">
+function Obwod(a,b)
+{
+ a_liczba=parseFloat(a)
+ b_liczba=parseFloat(b)
+ obwod_wynik=(a_liczba*2)+(b_liczba*2);
+ document.getElementsByName('obj')[0].value=obwod_wynik.toFixed(2); /* na dokument */
+ alert("obwod="+obwod_wynik.toFixed(2)+" cm"); /*do okna Alert */
+ pokaz1.innerHTML="obwod="+obwod_wynik.toFixed(2)+" cm"+"<br>"; /* do tabeli */
+}
+function Pole(a,b)
+{
+ a_liczba=parseFloat(a)
+ b_liczba=parseFloat(b)
+ Pole_wynik=a_liczba*b_liczba;
+ document.getElementsByName('pole')[0].value=Pole_wynik.toFixed(2);
+ alert("Pole="+Pole_wynik.toFixed(2)+" cm");
+ pokaz2.innerHTML="Pole="+Pole_wynik.toFixed(2)+"cm";
+}
+ </script>
+</head>
+<body>
+Pobliczanie Obwodu i Pola
+<br> <br>
+<form name="formularz" action="..." onsubmit="Obwod(this.promien.value,this.wysokosc.value);
+Pole(this.promien.value,this.wysokosc.value);return false">
+ Podaj a=
+ <input size="6" name="promien">
+ Podaj b=
+ <input size="6" name="wysokosc">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Obwod=
+ <input size="6" name="obj">
+ Pole=
+ <input size="6" name="pole">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
