@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ <head>
+ <title> z14_kod</title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<textarea cols="100" rows="35">
+    <!DOCTYPE html> 
+    <html lang="pl"> 
+      <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Zadanie 32 – Lishka</title> 
+      </head> 
+    <body style="background-color:yellow;"> 
+          <div style="color:green;font-size:46px;"> 
+                <script type="text/javascript"> 
+                    
+        function komputer(Marka_l,Kolor_l,Cena_l){
+            this.Marka = Marka_l; 
+            this.Kolor = Kolor_l;
+            this.Cena = Cena_l;
+        }
+        komputer.prototype.wypisz = function () 
+     {
+     alert(this.Marka + " " + this.Kolor+ " " + this.Cena);
+     };
+    
+     var komputer1 = new komputer("Nvidia","Zielony",3200);
+     var komputer2 = new komputer("Steam","black",2000);
+    
+     komputer1.wypisz();
+     komputer2.wypisz();
+        document.write("Moje nazwisko to LISHKA mam numer 9 a obiekt to komputer"+"<br>");
+                document.write("dostęp do pól komputer1 i komputer2"+"<br>");
+                document.write("czyli wypisanie danych"+"<br>");
+    
+                document.write("klient pierwszy =>"+" "+komputer1.Marka+" "+komputer1.Kolor+" "+komputer1.Cena+"<br>");
+                document.write("klient pierwszy =>"+" "+komputer2.Marka+" "+komputer2.Kolor+" "+komputer2.Cena+"<br>");
+                </script> 
+          </div> 
+     <br> 
+    <div style="color:blue;font-size:39px;"> 
+      <br> 
+      programowanie obiektowe:<br>
+      Słowo kluczowe prototype stosowane jest do:<br>
+      dodawania nowych metod (lub właściwości) do już istniejącego konstruktora – dzięki temu wszystkie obiekty<br>
+      utworzone tym konstruktorem (np. komputer1, komputer2) mają dostęp do tej samej metody wypisz() bez potrzeby<br>
+      wpisywania jej w każdym obiekcie osobno. Oszczędza to pamięć i pozwala na wspólną definicję zachowania<br>
+      Słowo kluczowe new stosowane jest do:<br>
+      tworzenia nowej instancji (nowego obiektu) na podstawie konstruktora, np. new komputer("Nvidia","Zielony",3200)<br>
+      – powoduje wywołanie konstruktora, utworzenie nowego obiektu oraz przypisanie do jego pól wartości przekazanych<br>
+      w argumentach. Wynik zapisujemy w zmiennej (np. komputer1, komputer2)<br>
+    
+    <div> 
+    </body> 
+    </html> 
+</textarea>
+</body>
+</html>
